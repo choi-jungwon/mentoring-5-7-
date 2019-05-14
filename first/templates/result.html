@@ -1,0 +1,8 @@
+<h1>당신이 입력한 텍스트</h1> {{total}}<br>
+<a href= "{% url 'home' %}">다시 돌아가기!</a>
+<h1>입력한 텍스트</h1>
+{{full}}
+<h1>단어카운트</h1>
+{% for word, howmany in dic%}
+{{word}} : {{howmany}} <br>
+{% endfor %}
